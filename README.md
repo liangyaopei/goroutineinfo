@@ -3,6 +3,10 @@
 
 A repository provides access to goroutine's ID, state and otehr information by parsing message invoking ` runtime.Stack`
 
+## Install
+```
+go get -u github.com/liangyaopei/goroutineinfo
+```
 
 ## Example
 ```go
@@ -24,5 +28,5 @@ testing
 ```
 go test ./... -bench=BenchmarkGetInfoSingle -benchmem -run=^$ -count=10
 ```
-time cost is  0.000034 ns/op
+time cost is  0.000034 ns/op average.
 
